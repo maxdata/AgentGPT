@@ -55,20 +55,20 @@ const getEnvDefinition = (envValues, isDockerCompose, dbPort, platformUrl) => {
       REWORKD_PLATFORM_REPLICATE_API_KEY: envValues.replicateApiKey || '""',
     },
     "Database (Backend)": {
-      REWORKD_PLATFORM_DATABASE_USER: "reworkd_platform",
-      REWORKD_PLATFORM_DATABASE_PASSWORD: "reworkd_platform",
+      REWORKD_PLATFORM_DATABASE_USER: "backend",
+      REWORKD_PLATFORM_DATABASE_PASSWORD: "backend",
       REWORKD_PLATFORM_DATABASE_HOST: "agentgpt_db",
       REWORKD_PLATFORM_DATABASE_PORT: dbPort,
-      REWORKD_PLATFORM_DATABASE_NAME: "reworkd_platform",
+      REWORKD_PLATFORM_DATABASE_NAME: "backend",
       REWORKD_PLATFORM_DATABASE_URL:
         "mysql://${REWORKD_PLATFORM_DATABASE_USER}:${REWORKD_PLATFORM_DATABASE_PASSWORD}@${REWORKD_PLATFORM_DATABASE_HOST}:${REWORKD_PLATFORM_DATABASE_PORT}/${REWORKD_PLATFORM_DATABASE_NAME}",
     },
     "Database (Frontend)": {
-      DATABASE_USER: "reworkd_platform",
-      DATABASE_PASSWORD: "reworkd_platform",
+      DATABASE_USER: "backend",
+      DATABASE_PASSWORD: "backend",
       DATABASE_HOST: "agentgpt_db",
       DATABASE_PORT: dbPort,
-      DATABASE_NAME: "reworkd_platform",
+      DATABASE_NAME: "backend",
       DATABASE_URL:
         "mysql://${DATABASE_USER}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}",
     },

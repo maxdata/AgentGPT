@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "reworkd_platform"
+name = "backend"
 version = "0.1.0"
 description = ""
 authors = [
@@ -68,7 +68,7 @@ types-pytz = "^2023.3.0.0"
 [tool.isort]
 profile = "black"
 multi_line_output = 3
-src_paths = ["reworkd_platform"]
+src_paths = ["backend"]
 
 [tool.mypy]
 strict = true
