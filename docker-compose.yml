@@ -4,28 +4,28 @@ services:
   frontend:
     container_name: frontend
     build:
-      context: ./next
+      context: ./frontend
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
     volumes:
-      - ./next/.env:/next/.env
-      - ./next/:/next/
-      - /next/node_modules
-      - /next/.next
+      - ./frontend/.env:/frontend/.env
+      - ./frontend/:/frontend/
+      - /frontend/node_modules
+      - /frontend/.next
 
-  platform:
-    container_name: platform
+  backend:
+    container_name: backend
     build:
-      context: ./platform
+      context: ./backend
       target: prod
     ports:
       - "8000:8000"
     restart: always
     volumes:
-      - ./platform:/app/src/
+      - ./backend:/app/src/
     env_file:
-      - next/.env
+      - backend/.env
     environment:
       REWORKD_PLATFORM_HOST: 0.0.0.0
       REWORKD_PLATFORM_DB_HOST: agentgpt_db
