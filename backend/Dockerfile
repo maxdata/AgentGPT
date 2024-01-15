@@ -11,6 +11,11 @@ RUN apt-get update && apt-get install -y \
 RUN pip install poetry==1.4.2
 RUN poetry config virtualenvs.create false
 
+# Install dependencies and copy files
+WORKDIR /
+COPY ./pyproject.toml /backend/
+RUN cd /backend && poetry install --only main
+
 # Removing gcc
 RUN apt-get purge -y \
   g++ \
@@ -18,10 +23,6 @@ RUN apt-get purge -y \
   pkg-config \
   && rm -rf /var/lib/apt/lists/*
 
-# Install dependencies and copy files
-WORKDIR /
-COPY ./pyproject.toml /backend/
-RUN cd /backend && poetry install --only main
 COPY . /backend
 
 CMD ["/usr/local/bin/python", "-m", "backend"]
