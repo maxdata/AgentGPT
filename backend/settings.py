@@ -3,8 +3,8 @@ from pathlib import Path
 from tempfile import gettempdir
 from typing import List, Literal, Optional, Union
 
-# from pydantic import BaseSettings
-from pydantic_settings import BaseSettings
+from pydantic import BaseSettings
+# from pydantic_settings import BaseSettings
 from yarl import URL
 
 from backend.constants import ENV_PREFIX

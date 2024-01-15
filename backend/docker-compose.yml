@@ -11,7 +11,7 @@ services:
       - "8000:8000"
     restart: always
     volumes:
-      - ./backend:/backend
+      - ./temp:/backend/temp
     env_file:
       - .env
     environment:
