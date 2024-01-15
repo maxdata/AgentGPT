@@ -5,15 +5,15 @@ services:
   backend:
     container_name: backend
     build:
-      context: ./backend
+      context: .
       target: prod
     ports:
       - "8000:8000"
     restart: always
     volumes:
-      - ./backend:/app/src/
+      - ./backend:/backend
     env_file:
-      - backend/.env
+      - .env
     environment:
       REWORKD_PLATFORM_HOST: 0.0.0.0
       REWORKD_PLATFORM_DB_HOST: agentgpt_db
@@ -23,3 +23,6 @@ services:
       REWORKD_PLATFORM_DB_BASE: "backend"
     # depends_on:
     #   - agentgpt_db
+
+# docker ps -a 
+# docker rm -f backend 
