@@ -1,8 +1,6 @@
-import { useSession } from "next-auth/react";
 import React from "react";
 
 import { ExampleAgentButton } from "./ExampleAgentButton";
-import { useSID } from "../../hooks/useSID";
 import FadeIn from "../motions/FadeIn";
 
 type ExampleAgentsProps = {
@@ -11,9 +9,11 @@ type ExampleAgentsProps = {
 };
 
 const ExampleAgents = ({ setAgentRun, setShowSignIn }: ExampleAgentsProps) => {
-  const { data: session } = useSession();
-  const sid = useSID(session);
-
+  // const { data: session } = useSession();
+  // const sid = useSID(session);
+  const session = null;
+  const sid = null;
+  
   return (
     <>
       <FadeIn delay={0.9} duration={0.5}>
