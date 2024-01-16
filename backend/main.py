@@ -28,9 +28,9 @@ def get_app() -> FastAPI:
     app = FastAPI(
         title="Reworkd Platform API",
         # version=metadata.version("backend"),
-        docs_url="/api/docs",
-        redoc_url="/api/redoc",
-        openapi_url="/api/openapi.json",
+        docs_url="/docs",
+        redoc_url="/redoc",
+        openapi_url="/openapi.json",
         default_response_class=UJSONResponse,
     )
 
@@ -53,3 +53,5 @@ def get_app() -> FastAPI:
     app.exception_handler(PlatformaticError)(platformatic_exception_handler)
 
     return app
+
+app = get_app()
