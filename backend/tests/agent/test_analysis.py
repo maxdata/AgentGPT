@@ -1,8 +1,8 @@
 import pytest
 from pydantic import ValidationError
 
-from backend.web.api.agent.analysis import Analysis
-from backend.web.api.agent.tools.tools import get_default_tool, get_tool_name
+from backend.api.agent.analysis import Analysis
+from backend.api.agent.tools.tools import get_default_tool, get_tool_name
 
 
 def test_analysis_model() -> None:

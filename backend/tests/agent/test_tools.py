@@ -1,11 +1,11 @@
 from typing import List, Type
 
-from backend.web.api.agent.tools.conclude import Conclude
-from backend.web.api.agent.tools.image import Image
-from backend.web.api.agent.tools.reason import Reason
-from backend.web.api.agent.tools.search import Search
-from backend.web.api.agent.tools.sidsearch import SID
-from backend.web.api.agent.tools.tools import (
+from backend.api.agent.tools.conclude import Conclude
+from backend.api.agent.tools.image import Image
+from backend.api.agent.tools.reason import Reason
+from backend.api.agent.tools.search import Search
+from backend.api.agent.tools.sidsearch import SID
+from backend.api.agent.tools.tools import (
     Tool,
     format_tool_name,
     get_default_tool,

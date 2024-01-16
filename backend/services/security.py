@@ -3,7 +3,7 @@ from typing import Union
 from cryptography.fernet import Fernet, InvalidToken
 
 from backend.settings import settings
-from backend.web.api.http_responses import forbidden
+from backend.api.http_responses import forbidden
 
 
 class EncryptionService:

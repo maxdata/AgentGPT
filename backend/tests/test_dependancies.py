@@ -1,6 +1,6 @@
 import pytest
 
-from backend.web.api.agent import dependancies
+from backend.api.agent import dependancies
 
 
 @pytest.mark.anyio

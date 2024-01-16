@@ -13,7 +13,7 @@ from sqlalchemy.ext.asyncio import (
 from backend.db.dependencies import get_db_session
 from backend.db.utils import create_database, drop_database
 from backend.settings import settings
-from backend.web.application import get_app
+from backend.application import get_app
 
 
 @pytest.fixture(scope="session")

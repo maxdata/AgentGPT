@@ -7,7 +7,7 @@ from backend.db.models.agent import AgentRun, AgentTask
 from backend.schemas.agent import Loop_Step
 from backend.schemas.user import UserBase
 from backend.settings import settings
-from backend.web.api.errors import MaxLoopsError, MultipleSummaryError
+from backend.api.errors import MaxLoopsError, MultipleSummaryError
 
 
 class AgentCRUD(BaseCrud):

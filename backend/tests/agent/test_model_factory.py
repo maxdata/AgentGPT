@@ -5,7 +5,7 @@ from langchain.chat_models import AzureChatOpenAI, ChatOpenAI
 
 from backend.schemas import ModelSettings, UserBase
 from backend.settings import Settings
-from backend.web.api.agent.model_factory import (
+from backend.api.agent.model_factory import (
     WrappedAzureChatOpenAI,
     WrappedChatOpenAI,
     create_model,

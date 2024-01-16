@@ -10,7 +10,7 @@ from pydantic import BaseModel
 
 from backend.settings import settings
 from backend.timer import timed_function
-from backend.web.api.memory.memory import AgentMemory
+from backend.api.memory.memory import AgentMemory
 
 OPENAI_EMBEDDING_DIM = 1536
 

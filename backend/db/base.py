@@ -7,7 +7,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 from backend.db.meta import meta
-from backend.web.api.http_responses import not_found
+from backend.api.http_responses import not_found
 
 T = TypeVar("T", bound="Base")
 

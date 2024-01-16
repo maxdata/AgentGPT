@@ -2,8 +2,8 @@ import pytest
 from openai.error import InvalidRequestError, ServiceUnavailableError
 
 from backend.schemas.agent import ModelSettings
-from backend.web.api.agent.helpers import openai_error_handler
-from backend.web.api.errors import OpenAIError
+from backend.api.agent.helpers import openai_error_handler
+from backend.api.errors import OpenAIError
 
 
 async def act(*args, settings: ModelSettings = ModelSettings(), **kwargs):

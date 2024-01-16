@@ -1,1 +1,1 @@
-"""backend package."""
+"""WEB API for backend."""

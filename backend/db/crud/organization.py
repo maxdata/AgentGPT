@@ -12,7 +12,7 @@ from backend.db.dependencies import get_db_session
 from backend.db.models.auth import Organization, OrganizationUser
 from backend.db.models.user import User
 from backend.schemas import UserBase
-from backend.web.api.dependencies import get_current_user
+from backend.api.dependencies import get_current_user
 
 
 class OrgUser(BaseModel):

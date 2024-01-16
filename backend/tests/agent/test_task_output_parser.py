@@ -3,7 +3,7 @@ from typing import List, Type
 import pytest
 from langchain.schema import OutputParserException
 
-from backend.web.api.agent.task_output_parser import (
+from backend.api.agent.task_output_parser import (
     TaskOutputParser,
     extract_array,
     real_tasks_filter,

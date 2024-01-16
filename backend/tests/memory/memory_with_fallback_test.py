@@ -1,6 +1,6 @@
 import pytest
 
-from backend.web.api.memory.memory_with_fallback import MemoryWithFallback
+from backend.api.memory.memory_with_fallback import MemoryWithFallback
 
 
 @pytest.mark.parametrize(

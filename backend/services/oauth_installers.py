@@ -12,7 +12,7 @@ from backend.schemas import UserBase
 from backend.services.security import encryption_service
 from backend.settings import Settings
 from backend.settings import settings as platform_settings
-from backend.web.api.http_responses import forbidden
+from backend.api.http_responses import forbidden
 
 
 class OAuthInstaller(ABC):

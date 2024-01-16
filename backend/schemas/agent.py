@@ -3,7 +3,7 @@ from typing import Any, Dict, List, Literal, Optional
 
 from pydantic import BaseModel, Field, validator
 
-from backend.web.api.agent.analysis import Analysis
+from backend.api.agent.analysis import Analysis
 
 LLM_Model = Literal[
     "gpt-3.5-turbo",

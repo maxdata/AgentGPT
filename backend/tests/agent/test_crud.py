@@ -6,7 +6,7 @@ from pytest_mock import MockerFixture
 
 from backend.db.crud.agent import AgentCRUD
 from backend.settings import settings
-from backend.web.api.errors import MaxLoopsError, MultipleSummaryError
+from backend.api.errors import MaxLoopsError, MultipleSummaryError
 
 
 @pytest.mark.asyncio
